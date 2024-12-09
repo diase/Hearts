@@ -426,12 +426,6 @@ namespace Heartsv3
 
         private void PrintScore()
         {
-            /*
-            int sum1;
-            int sum2;
-            sum1 = Scores[0] + Scores[2];
-            sum2 = Scores[1] + Scores[3];
-            */
             Console.WriteLine("Scores: ");
             Console.WriteLine("You: " + Scores[0] + " P1: " + Scores[1] + " P2: " + Scores[2] + " P3: " + Scores[3]);
             Console.WriteLine();

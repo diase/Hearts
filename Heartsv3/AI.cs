@@ -12,7 +12,7 @@ public class AI
     string resp;
     public AI(List<int> hand, List<int> pile)
     {
-        
+        //must replace with own key!
         string apiKey = "INSERT YOUR KEY HERE";
         string endpoint = "https://api.openai.com/v1/chat/completions";
 
