@@ -1,0 +1,15 @@
+C:\Users\ericl\RiderProjects\Heartsv3\Heartsv3\bin\Debug\net6.0\Heartsv3.exe
+C:\Users\ericl\RiderProjects\Heartsv3\Heartsv3\bin\Debug\net6.0\Heartsv3.deps.json
+C:\Users\ericl\RiderProjects\Heartsv3\Heartsv3\bin\Debug\net6.0\Heartsv3.runtimeconfig.json
+C:\Users\ericl\RiderProjects\Heartsv3\Heartsv3\bin\Debug\net6.0\Heartsv3.dll
+C:\Users\ericl\RiderProjects\Heartsv3\Heartsv3\bin\Debug\net6.0\Heartsv3.pdb
+C:\Users\ericl\RiderProjects\Heartsv3\Heartsv3\obj\Debug\net6.0\Heartsv3.csproj.AssemblyReference.cache
+C:\Users\ericl\RiderProjects\Heartsv3\Heartsv3\obj\Debug\net6.0\Heartsv3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ericl\RiderProjects\Heartsv3\Heartsv3\obj\Debug\net6.0\Heartsv3.AssemblyInfoInputs.cache
+C:\Users\ericl\RiderProjects\Heartsv3\Heartsv3\obj\Debug\net6.0\Heartsv3.AssemblyInfo.cs
+C:\Users\ericl\RiderProjects\Heartsv3\Heartsv3\obj\Debug\net6.0\Heartsv3.csproj.CoreCompileInputs.cache
+C:\Users\ericl\RiderProjects\Heartsv3\Heartsv3\obj\Debug\net6.0\Heartsv3.dll
+C:\Users\ericl\RiderProjects\Heartsv3\Heartsv3\obj\Debug\net6.0\refint\Heartsv3.dll
+C:\Users\ericl\RiderProjects\Heartsv3\Heartsv3\obj\Debug\net6.0\Heartsv3.pdb
+C:\Users\ericl\RiderProjects\Heartsv3\Heartsv3\obj\Debug\net6.0\Heartsv3.genruntimeconfig.cache
+C:\Users\ericl\RiderProjects\Heartsv3\Heartsv3\obj\Debug\net6.0\ref\Heartsv3.dll
