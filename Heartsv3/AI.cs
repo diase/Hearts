@@ -13,7 +13,7 @@ public class AI
     public AI(List<int> hand, List<int> pile)
     {
         
-        string apiKey = "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";
+        string apiKey = "INSERT YOUR KEY HERE";
         string endpoint = "https://api.openai.com/v1/chat/completions";
 
         // Create the HTTP request
