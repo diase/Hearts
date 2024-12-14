@@ -13,7 +13,7 @@ public class AI
     public AI(List<int> hand, List<int> pile)
     {
         //must replace with own key!
-        string apiKey = "INSERT OWN KEY HERE";
+        //Write own key here
         string endpoint = "https://api.openai.com/v1/chat/completions";
 
         // Create the HTTP request
@@ -61,7 +61,7 @@ public class AI
                 .GetProperty("message")
                 .GetProperty("content")
                 .GetString();
-            //Console.WriteLine("Response: " + content);
+            Console.WriteLine("Response: " + content);
             return int.Parse(content);
         
     }

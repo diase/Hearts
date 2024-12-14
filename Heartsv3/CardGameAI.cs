@@ -37,6 +37,7 @@
                             $"Cards running from 26 to 38 are Diamonds" +
                             $"Cards running from 39 to 51 inclusive are Clubs" +
                             $"You must play a card of the same suit as the first player if possible." +
+                            $"You must return integer!" +
                             $"If 40 is in your hand you must return 40!" +
                             $"You cannot play the same card as another player" +
                             $"You can only play something from your hand! " +
@@ -44,7 +45,7 @@
                     }
                 },
                 max_tokens = 2,
-                temperature = 0.7
+                temperature = 0.1
             };
 
             // Serialize the payload to JSON
