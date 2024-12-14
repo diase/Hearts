@@ -46,6 +46,7 @@
                 },
                 max_tokens = 2,
                 temperature = 0.1
+                //sometimes gives garbage responses
             };
 
             // Serialize the payload to JSON
