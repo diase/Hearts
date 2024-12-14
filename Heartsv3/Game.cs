@@ -83,48 +83,87 @@ namespace Heartsv3
             dict.Add(11, "Q");
             dict.Add(12, "K");
             List<string> toPrint = new List<string>();
-            List<string> sp = new List<string>();
-            List<string> he = new List<string>();
-            List<string> di = new List<string>();
-            List<string> cl = new List<string>();
+            List<int> sp = new List<int>();
+            List<int> he = new List<int>();
+            List<int> di = new List<int>();
+            List<int> cl = new List<int>();
             for (int i = 0; i < h.Count; i++)
             {
                 string suit;
-                string card = dict[(h[i] % 13)];
+                //string card = dict[(h[i] % 13)];
+                int card;
                 if (h[i] < 13)
                 {
-                    //Console.WriteLine(h[i]);
-                    suit = "S";
-                    string toAdd = card + suit;
+                    card = h[i]%13;
                     //Console.WriteLine(toAdd);
-                    sp.Add(toAdd);
+                    sp.Add(card);
                     //Console.WriteLine("Spade Length now: " + spade.Count);
                 }
                 else if (h[i] < 26)
                 {
-                    suit = "H";
-                    string toAdd = card + suit;
-                    he.Add(toAdd);
+                    //suit = "H";
+                    card = h[i]%13;
+                    he.Add(card);
                 }
                 else if (h[i] < 39)
                 {
-                    suit = "D";
-                    string toAdd = card + suit;
-                    di.Add(toAdd);
+                    //suit = "D";
+                    card = h[i]%13;
+                    di.Add(card);
                 }
                 else
                 {
-                    suit = "C";
-                    string toAdd = card + suit;
-                    cl.Add(toAdd);
+                    //suit = "C";
+                    card = h[i]%13;
+                    cl.Add(card);
                 }
-                
             }
-
-            toPrint = sp;
-            toPrint.AddRange(di);
-            toPrint.AddRange(cl);
-            toPrint.AddRange(he);
+            //sort all suits ascending order
+            sp.Sort();
+            he.Sort();
+            di.Sort();
+            cl.Sort();
+            
+            //now add suits to cards
+            List<string> s = new List<String>();
+            for (int i = 0; i < sp.Count; i++)
+            {
+                int c = sp[i];
+                string card = dict[c];
+                string suit = "S";
+                s.Add(card + suit);
+            }
+            //k for kaliz(heart)
+            List<string> k = new List<string>();
+            for (int i = 0; i < he.Count; i++)
+            {
+                int c = he[i];
+                string card = dict[c];
+                string suit = "H";
+                k.Add(card + suit);
+            }
+            List<string> d = new List<string>();
+            for (int i = 0; i < di.Count; i++)
+            {
+                int c = di[i];
+                string card = dict[c];
+                string suit = "D";
+                d.Add(card + suit);
+            }
+            List<string> club = new List<string>();
+            for (int i = 0; i < cl.Count; i++)
+            {
+                int c = cl[i];
+                string card = dict[c];
+                string suit = "C";
+                club.Add(card + suit);
+            }
+            
+            
+            toPrint = s;
+            toPrint.AddRange(d);
+            toPrint.AddRange(club);
+            toPrint.AddRange(k);
             Console.WriteLine("Printing User hand: ");////////////////////////////////////////////
             Console.WriteLine(string.Join(" ", toPrint.ToArray()));
         }

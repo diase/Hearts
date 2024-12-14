@@ -14,6 +14,9 @@ public class AI
     {
         //must replace with own key!
         //Write own key here
+        string apiKey =
+            "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";
+        
         string endpoint = "https://api.openai.com/v1/chat/completions";
 
         // Create the HTTP request
