@@ -331,6 +331,7 @@ namespace Heartsv3
                 //Console.WriteLine("Player Hand is Now: ");
                 //PrintHand(pw2);
                 hand.Add(toAdd);
+                Players[CurrentPlayer].UpdateHand(40);
                 //Console.WriteLine("Player: " + CurrentPlayer);
                 PrintCard(toAdd);
                 
@@ -347,6 +348,8 @@ namespace Heartsv3
             for (int i = 0; i < 3; i++)
             {
                 CurrentPlayer = (CurrentPlayer + 1) % 4;
+                //Console.WriteLine("CurrentPlayer");
+                //Console.WriteLine(CurrentPlayer);
                 if (CurrentPlayer != 0)
                 {
                     AI model = new AI(Players[CurrentPlayer].GetHand(), hand);
@@ -354,6 +357,7 @@ namespace Heartsv3
                     
                     //toAdd = Players[CurrentPlayer].move(hand);
                     hand.Add(toAdd);
+                    Players[CurrentPlayer].UpdateHand(toAdd);
                     PrintCard(toAdd);
                 }
                 else
@@ -406,6 +410,7 @@ namespace Heartsv3
                         toAdd = model.GetCard();
                         //toAdd = Players[CurrentPlayer].move(hand);
                         hand.Add(toAdd);
+                        Players[CurrentPlayer].UpdateHand(toAdd);
                         PrintCard(toAdd);
                     }
 
@@ -610,7 +615,7 @@ namespace Heartsv3
             {
                 if (ls[i] > ls[maxInd])
                 {
-                    if ((ls[i] % 13 == 0))
+                    if (ls[i] % 13 == 0)
                     {
                         return i;
                     }
